@@ -1,0 +1,56 @@
+var base = 2
+var altura = 5
+var perimetro = 2 * base + 2 * altura
+var area = base * altura
+print("Perímetro: ", perimetro)
+print("Área: ", area)
+
+------------------------------------------
+var cateto0 : Double = 2
+var cateto1 : Double = 5
+var hipotenusa : Double = sqrt(pow(cateto0, 2) + pow(cateto1, 2))
+print("Hipotenusa: ", hipotenusa)
+
+-----------------------------------------
+var num1 = 2
+var num2 = 5
+print("Suma: ", (num1 + num2))
+print("Resta: ", (num1 - num2))
+print("División: ", (num1 / num2))
+print("Multiplicación: ", (num1 * num2))
+
+
+--------------------------------------------
+var farenheit : Double = 50
+var celsius: Double = (farenheit - 32) / 1.8
+print("farenheit: ", farenheit, " - celsius: ", celsius)
+
+-------------------------------------------
+var n1 : Double = 1.5
+var n2 : Double = 5
+var n3 : Double = 10
+var media : Double = (n1 + n2 + n3) / 3
+print("Media: ", media)
+
+----------------------------------------------
+var sueldoBase : Double = 2000
+var venta1 : Double = 700.1
+var venta2 : Double = 100.5
+var venta3 : Double = 420
+var comision : Double = (venta1 + venta2 + venta3) * 0.10
+var sueldoFinal : Double = sueldoBase + comision
+print("Sueldo base: ", sueldoBase)
+print("Comisión: ", comision)
+print("Sueldo final: ", sueldoFinal)
+
+--------------------------------------------------
+
+
+var parcial1 : Double = 1.5
+var parcial2 : Double = 5
+var parcial3 : Double = 10
+var promedio : Double = (parcial1 + parcial2 + parcial3) / 3
+var examFinal : Double = 5.5
+var trabjFinal : Double = 9.9
+var notaFinal = promedio * 0.55 + examFinal * 0.3 + trabjFinal * 0.15
+print("Nota final: ", notaFinal)

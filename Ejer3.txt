@@ -1,0 +1,98 @@
+class MemoriaRam {
+    var almacenamiento = 0
+    var fabricante = ""
+    var rgb = false
+}
+
+class Procesador {
+    var velocidad = 0.0
+    var numCores = 0
+    var numHilos = 0
+    var fabricante = ""
+}
+
+class UnidadAlmacenamiento {
+    var almacenamiento = 0
+    var fabricante = ""
+    var tipoUnidad = ""
+}
+
+class TarjetaGrafica {
+    var ramGraph = MemoriaRam()
+    var consumo = 0.0
+    var cudaCores = 0
+    var velocidad = 0.0
+}
+
+class Ordenador {
+    var precio = 0.0
+    var nombreEquipo = ""
+    var listaRams = [MemoriaRam]()
+    var procesador = Procesador()
+    var listaUnidadesAlm = [UnidadAlmacenamiento]()
+    var tarjetaOdenador = TarjetaGrafica()
+}
+
+
+
+var ram1 = MemoriaRam()
+ram1.almacenamiento = 16
+ram1.fabricante = "kelsius"
+ram1.rgb = true
+
+var ram2 = MemoriaRam()
+ram2.almacenamiento = 12
+ram2.fabricante = "bmw"
+ram2.rgb = true
+
+var ram3 = MemoriaRam()
+ram3.almacenamiento = 8
+ram3.fabricante = "crucial"
+ram3.rgb = false
+
+
+var proce1 = Procesador()
+proce1.velocidad = 8.6
+proce1.numCores = 4
+proce1.numHilos = 4
+proce1.fabricante = "Intel"
+
+
+var ua1 = UnidadAlmacenamiento()
+ua1.almacenamiento = 1000
+ua1.fabricante = "UA-mega"
+ua1.tipoUnidad = "SSD"
+
+var ua2 = UnidadAlmacenamiento()
+ua2.almacenamiento = 500
+ua2.fabricante = "Logitech"
+ua2.tipoUnidad = "HDD"
+
+
+var tarj1 = TarjetaGrafica()
+tarj1.ramGraph = ram3
+tarj1.consumo = 465
+tarj1.cudaCores = 12
+tarj1.velocidad = 1500
+
+
+var listaRams = [MemoriaRam]()
+listaRams.append(ram1)
+listaRams.append(ram2)
+
+
+var listaUnidAlmac = [UnidadAlmacenamiento]()
+listaUnidAlmac.append(ua1)
+listaUnidAlmac.append(ua2)
+
+
+var ordenador1 = Ordenador()
+ordenador1.precio = 5430.50
+ordenador1.nombreEquipo = "Equipo1"
+ordenador1.listaRams = listaRams
+ordenador1.procesador = proce1
+ordenador1.listaUnidadesAlm = listaUnidAlmac
+ordenador1.tarjetaOdenador = tarj1
+
+
+dump(ordenador1)
